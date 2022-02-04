@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+JP&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&family=Yeseva+One&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.carousel-section{
+    height: 100vh;
+    width: 100%;
+    background: rgb(255, 50, 91);
+
+}
+.title{
+    font-size: 50px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 5px;
+}
+.container{
+    height: 400px;
+    width: 800px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+   transform: translate(-50%, -50%);    
+}
+.row-slide{
+    width: 3200px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    transition: 0.5s;
+}
+.col-slide{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background:white;
+    color:rgb(6, 6, 41);
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 2px;
+}
+.user-img {
+    height: 150px;
+    width:160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: fill;
+    position: relative;
+    left:35px;   
+}
+.user-img img{
+    height: 150px;    
+    width: 160px;
+}
+.text{
+   width: 66.5%;
+   padding-bottom: 10px;
+   top: -40px;
+   position: relative;
+   line-height: 1.2;
+} 
+.text-width{
+    width: 440px;
+}
+
+.text::after{
+    content: "";
+  position: absolute;
+  height: 20px;
+  width: 300px;
+  background: yellow;
+  bottom: 140px;
+}
+.controls{
+position: absolute;
+left: 50%;
+bottom: -50px;
+transform: translateX(-50%);
+}
+.btn{
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  background: white;
+  transition: 0.4s;
+}
+.active{
+    width: 45px;
+}
+.testimonial{
+    height: 400px;
+    width: 800px;
+    overflow: hidden;
+}
